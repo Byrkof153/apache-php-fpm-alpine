@@ -44,6 +44,7 @@ RUN apk add \
     php8-pdo \
     php8-pdo_mysql \
     php8-pdo_sqlite \
+    php8-pdo_pgsql \
     php8-posix \
     php8-session \
     php8-simplexml \
