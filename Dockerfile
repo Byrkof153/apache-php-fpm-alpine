@@ -27,39 +27,39 @@ ADD --chown=root:root include/zshrc /etc/zsh/zshrc
 
 # install php
 RUN apk add \
-    # use php8-fpm instead of php8-apache2
-    php8-fpm \
-    php8-bcmath \
-    php8-common \
-    php8-ctype \
-    php8-curl \
-    php8-dom \
-    php8-fileinfo \
-    php8-gettext \
-    php8-json \
-    php8-mbstring \
-    php8-mysqli \
-    php8-opcache \
-    php8-openssl \
-    php8-pdo \
-    php8-pdo_mysql \
-    php8-pdo_sqlite \
-    php8-pdo_pgsql \
-    php8-posix \
-    php8-session \
-    php8-simplexml \
-    php8-sodium \
-    php8-tokenizer \
-    php8-xml \
-    php8-xmlwriter \
-    php8-zip
+    # use php7-fpm instead of php7-apache2
+    php7-fpm \
+    php7-bcmath \
+    php7-common \
+    php7-ctype \
+    php7-curl \
+    php7-dom \
+    php7-fileinfo \
+    php7-gettext \
+    php7-json \
+    php7-mbstring \
+    php7-mysqli \
+    php7-opcache \
+    php7-openssl \
+    php7-pdo \
+    php7-pdo_mysql \
+    php7-pdo_sqlite \
+    php7-pdo_pgsql \
+    php7-posix \
+    php7-session \
+    php7-simplexml \
+    php7-sodium \
+    php7-tokenizer \
+    php7-xml \
+    php7-xmlwriter \
+    php7-zip
 
 # install xdebug
 RUN apk add \
     php8-pecl-xdebug
 
 # configure xdebug
-ADD --chown=root:root include/xdebug.ini /etc/php8/conf.d/xdebug.ini
+ADD --chown=root:root include/xdebug.ini /etc/php7/conf.d/xdebug.ini
 
 # install composer
 RUN apk add \
